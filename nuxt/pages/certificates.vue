@@ -29,7 +29,7 @@
                 <!-- <a :href="cert.image" target="blank"><img :src="cert.image" height="180"></a> -->
 
 
-                <a :href="cert.image" data-lightbox="roadtrip"><img :src="cert.image" height="120"></a>
+                <a :href="cert.image" data-lightbox="roadtrip" target="blank"><img :src="cert.image" height="120"></a>
                 <!-- <a href="img/aboutme.png" data-lightbox="aboutme" data-title="My caption">Image #1</a> -->
                 <!-- <img src="img/aboutme.png" data-lightbox="aboutme" data-title="My caption"> -->
                 <!-- <button><a :href="cert.image" target="_blank">look2 certificate</a></button> -->
@@ -67,7 +67,7 @@ export default {
     return {
       script: [
         {
-          src: 'js/lightbox-plus-jquery.js',
+          src: 'js/lightbox.js',
         }
       ],
     }
