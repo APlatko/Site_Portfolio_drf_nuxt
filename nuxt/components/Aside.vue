@@ -12,7 +12,6 @@
 
       <div class="item">
         <div class="skills-section">
-          <!-- Skills -->
 
           <ul class="skills">
             <li>
@@ -40,13 +39,7 @@
               <span class="rat6"></span>
             </li>
           </ul>
-          <!-- /Skills -->
-        </div>
-        <!-- <div v-for="cert in certs" :key="cert">
-        <h3>{{ cert.course_title}}</h3>
-        <img :src="cert.preview_url" style="width:200px">
-        </div> -->
-
+        </div><!-- skill end -->
 
       </div><!-- item end -->
 

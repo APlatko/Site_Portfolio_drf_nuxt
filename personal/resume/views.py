@@ -14,15 +14,13 @@ class PageNumberSetPagination(pagination.PageNumberPagination):
 
 
 class ExperienceViewSet(viewsets.ModelViewSet):
-    search_fields = ['title', 'description', 'company']  # do not find in skills!
+    search_fields = ['title', 'description', 'company']
     filter_backends = (filters.SearchFilter,)
     serializer_class = ExperienceSerializer
     queryset = Experience.objects.all().order_by('-start')
     lookup_field = 'slug'
     permission_classes = [permissions.AllowAny]
     pagination_class = PageNumberSetPagination
-
-
 
 
 class EducationView(generics.ListAPIView):
@@ -43,7 +41,7 @@ class ProfileView(generics.GenericAPIView):
     permission_classes = [permissions.IsAuthenticated]
     serializer_class = UserSerializer
 
-    def get(self, request, *args,  **kwargs):
+    def get(self, request, *args, **kwargs):
         return Response({
             "user": UserSerializer(request.user, context=self.get_serializer_context()).data,
         })
@@ -53,7 +51,7 @@ class RegisterView(generics.GenericAPIView):
     permission_classes = [permissions.AllowAny]
     serializer_class = RegisterSerializer
 
-    def post(self, request, *args,  **kwargs):
+    def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
