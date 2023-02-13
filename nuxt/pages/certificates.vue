@@ -20,7 +20,7 @@
                 <h3>{{ cert.title }}</h3>
                 <h4>{{ cert.organization }}</h4>
                 <div class="date">{{ cert.date }}</div>
-                <a :href="cert.image" data-lightbox="roadtrip" target="blank"><img :src="cert.image" height="120"></a>
+                <a :href="cert.image" data-lightbox="roadtrip"><img :src="cert.image" height="120"></a>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export default {
 			],
       script: [
         {
-          src: 'js/lightbox.js',
+          src: 'js/lightbox-plus-jquery.js',
         }
       ],
 		}
