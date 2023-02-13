@@ -1,9 +1,9 @@
 <template>
   <div id="header">
     <h1><nuxt-link to="/">Anton Platko</nuxt-link></h1>
-    <div id="asd">
+    <div id="navblock">
 
-      <div id="aaa">
+      <div id="search">
         <form>
           <input name="q" id="input" v-model="q" type="text" placeholder="Enter search query" aria-label="Search">
           <button id="button" type="submit" @click.stop.prevent="submit()">Search</button>

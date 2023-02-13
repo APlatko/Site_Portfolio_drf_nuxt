@@ -1,13 +1,11 @@
 <template>
 
-
 	<div id="page-shadow">
 
 		<div id="page">
 
 			<div class="content-innertube">
 				<Navbar />
-
 
 				<div id="text">PROJECTS</div>
 				<div id="stripe"></div>
@@ -52,8 +50,6 @@
 					</div> <!--project-lists end -->
 				</div>
 			</div><!-- content-innertube end -->
-
-
 
 		</div><!-- page end -->
 

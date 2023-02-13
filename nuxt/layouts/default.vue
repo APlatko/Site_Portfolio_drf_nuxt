@@ -1,17 +1,14 @@
 <template>
   <div>
-    <!-- <Navbar /> -->
-    <!-- <div class="container"> -->
     <Nuxt />
     <Footer />
-    <!-- </div> -->
   </div>
 </template>
 
 
 <script>
 import Navbar from "~/components/Navbar";
-import Aside from "~/components/Aside";
+// import Aside from "~/components/Aside";
 import Footer from "~/components/Footer";
 
 

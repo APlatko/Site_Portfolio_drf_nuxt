@@ -7,7 +7,6 @@
 			<div class="content-innertube">
 				<Navbar />
 
-
 				<div id="text">CONTACT</div>
 
 				<div id="stripe"></div>
@@ -35,12 +34,7 @@
 						</p>
 					</li>
 
-				</ul><!-- contact-columns end -->
-				<!-- 
-				<div v-else>
-						<h6 class="card-header"><nuxt-link to="/signin">Authorise</nuxt-link> or <nuxt-link
-								to="/register">register</nuxt-link> to leave a comment</h6>
-				</div> -->
+				</ul>
 
 				<div>
 					<span v-if="user">
@@ -96,12 +90,9 @@
 								to="/register">register</nuxt-link> to leave a comment</h3>
 					</div>
 
-
-
 				</div><!-- form-container end -->
 
 				<Comments :comments="comments" />
-
 
 			</div><!-- content-innertube end -->
 
@@ -134,12 +125,10 @@ export default {
 					company: this.company,
 					email: this.email,
 				})
-				console.log(email)
 				this.new_comment = '';
 				this.company = '';
 				this.email = '';
 				this.comments.splice(0, 0, response.data)
-				console.log(response)
 			} catch (err) {
 				console.log(err)
 			}

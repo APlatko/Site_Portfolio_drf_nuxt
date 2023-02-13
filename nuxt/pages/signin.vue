@@ -6,7 +6,6 @@
       <div class="content-innertube">
         <Navbar />
 
-
         <div id="text">SIGN IN</div>
         <div id="stripe"></div>
 
@@ -20,12 +19,9 @@
           <button type="submit">Singin</button>
         </form>
 
-
-
       </div><!-- content-innertube end -->
 
       <div class="clear"></div>
-
 
     </div><!-- page end -->
 
@@ -48,9 +44,6 @@ export default {
     async userLogin() {
       try {
         let response = await this.$auth.loginWith('local', { data: this.login })
-        // console.log(response)
-        // this.$router.push('/')
-        // this.$router.back()
         this.$router.push('/contact')
       } catch (err) {
             console.log(err)

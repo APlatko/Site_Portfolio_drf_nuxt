@@ -1,6 +1,5 @@
 <template>
 
-
 	<div id="page-shadow">
 
 		<div id="page">
@@ -115,8 +114,6 @@
 				<br>
 
 			</div><!-- content-innertube end -->
-
-
 
 		</div><!-- page end -->
 

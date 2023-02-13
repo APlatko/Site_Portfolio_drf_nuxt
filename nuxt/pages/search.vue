@@ -6,16 +6,10 @@
       <div class="content-innertube">
         <Navbar />
 
-
         <div id="text">SEARCH RESULTS</div>
         <div id="stripe"></div>
 
-
-
         <div id="content-left">
-
-
-
 
           <div class="section">
 
@@ -27,7 +21,6 @@
               <div class="item">
                 <h3>{{ result.title }}</h3>
                 <h4>{{ result.company }}</h4>
-
 
                 <div class="description">
                   <p class="margin" v-html="result.description"></p>
@@ -47,11 +40,9 @@
         </div> <!-- content-left end -->
         <Aside :education="education" />
 
-
       </div><!-- content-innertube end -->
 
       <div class="clear"></div>
-
 
     </div><!-- page end -->
 
@@ -65,7 +56,6 @@ export default {
   async asyncData({ route }) {
     const { data } = await axios.get(`http://localhost:8001/api/experience/?q=${route.query.q}`);
     const edu = await axios.get(`http://127.0.0.1:8001/api/education/`);
-    console.log(route.query.q);
     return {
       q_result: data,
       education: edu.data,

@@ -6,7 +6,6 @@
       <div class="content-innertube">
         <Navbar />
 
-
         <div id="text">REGISTER</div>
         <div id="stripe"></div>
 
@@ -27,12 +26,9 @@
           <button type="submit">Register</button>
         </form>
 
-
-
       </div><!-- content-innertube end -->
 
       <div class="clear"></div>
-
 
     </div><!-- page end -->
 
@@ -66,7 +62,6 @@ export default {
           },
         })
         this.$router.back()
-        // console.log(response)
       } catch (err) {
         console.log(err)
       }
