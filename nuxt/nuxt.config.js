@@ -14,6 +14,11 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    script: [
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js'
+      }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: "preload" },
@@ -32,6 +37,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -83,6 +89,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    // transpile: [/^element-ui/],
+    // plugins: [
+    //     new webpack.ProvidePlugin({
+    //       $: 'jquery',
+    //       jQuery: 'jquery',
+    //       'window.jQuery': 'jquery'
+    //     }),
+    // ]
   },
   server: {
     port: 3000 // default: 3000

@@ -12,6 +12,7 @@
     "@nuxtjs/auth-next": "*",
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.25.3",
+    "jquery": "^3.6.3",
     "nuxt": "^2.15.8",
     "photoswipe": "^5.3.5",
     "vue": "^2.7.10",
