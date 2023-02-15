@@ -57,6 +57,7 @@ export default {
     const { data } = await axios.get(`http://localhost:8001/api/experience/?q=${route.query.q}`);
     const edu = await axios.get(`http://127.0.0.1:8001/api/education/`);
     return {
+
       q_result: data,
       education: edu.data,
       query: route.query.q,

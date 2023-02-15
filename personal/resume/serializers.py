@@ -12,7 +12,7 @@ class ExperienceSerializer(TaggitSerializer, serializers.ModelSerializer):
 
     class Meta:
         model = Experience
-        fields = ("id", "title", "company", "slug", "description", "start", "end", "image", "author", "skills")
+        fields = ("id", "title", "company", "slug", "description", "contest", "start", "end", "image", "link", "author", "skills")
         lookup_field = 'slug'
         extra_kwargs = {
             'url': {'lookup_field': 'slug'}

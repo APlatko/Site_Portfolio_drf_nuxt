@@ -2,15 +2,11 @@
   <div id="page-shadow">
 
     <div id="page">
-
       <div class="content-innertube">
         <Navbar />
-
         <div id="text">SOFTWARE DEVELOPER</div>
 
         <div id="stripe"></div>
-
-
 
         <div id="content-left">
           <div class="section">
@@ -42,12 +38,8 @@
           </div><!-- section end -->
 
         </div><!-- content-left end -->
-
-
-
         <Aside :education="education" />
       </div><!-- content-innertube end -->
-
       <div class="clear"></div>
 
     </div><!-- page end -->

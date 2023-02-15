@@ -59,7 +59,7 @@ export default {
 			],
       script: [
         {
-          src: 'js/lightbox.js',
+          // src: 'js/lightbox.js',
         }
       ],
 		}
