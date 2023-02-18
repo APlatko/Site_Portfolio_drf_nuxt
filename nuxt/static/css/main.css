@@ -640,6 +640,13 @@ p.margin {
 	margin-top: 0;
 }
 
+.ordering {
+	display: flex;
+	justify-content: right;
+	font-size: 14px;
+	padding-bottom: 50px;
+}
+
 .date {
 	position: absolute;
 	top: 6px;

@@ -14,10 +14,12 @@ class PageNumberSetPagination(pagination.PageNumberPagination):
 
 
 class ExperienceViewSet(viewsets.ModelViewSet):
-    search_fields = ['title', 'description', 'company']
-    filter_backends = (filters.SearchFilter,)
+    filter_backends = (filters.SearchFilter, filters.OrderingFilter)
+    search_fields = ['title', 'description', 'contest', 'company', 'skills__slug']
+    ordering_fields = ['start']
+    ordering = ['-start']
     serializer_class = ExperienceSerializer
-    queryset = Experience.objects.all().order_by('-start')
+    queryset = Experience.objects.all()
     lookup_field = 'slug'
     permission_classes = [permissions.AllowAny]
     pagination_class = PageNumberSetPagination
@@ -57,7 +59,7 @@ class RegisterView(generics.GenericAPIView):
         user = serializer.save()
         return Response({
             "user": UserSerializer(user, context=self.get_serializer_context()).data,
-            "message": "Пользователь успешно создан",
+            "message": "User has been successfully created",
         })
 
 
